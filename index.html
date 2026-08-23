@@ -4,6 +4,7 @@
     <title>Anuj Sable | Data Science Portfolio</title>
 
     <meta charset="utf-8" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -34,36 +35,47 @@
         padding-top: 40px !important;
       }
 
+      /* Top typing animation */
       #typing-animation {
+        display: inline-block;
+        min-height: 40px;
         font-size: 30px;
         font-weight: bold;
         color: #ffbd39;
       }
 
-      /* Animated Job Role */
-      .role-animation {
-        font-size: 28px;
-        font-weight: 700;
-        color: #ffbd39;
-        min-height: 45px;
+      /* Main animated job role */
+      #role-animation {
+        display: block;
+        min-height: 50px;
         margin-top: 10px;
         margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #ffbd39;
+        white-space: nowrap;
       }
 
-      .cursor {
+      #role-text {
+        display: inline;
+      }
+
+      #role-cursor {
         display: inline-block;
         margin-left: 3px;
         color: #ffbd39;
-        animation: blink 0.7s infinite;
+        font-weight: 400;
+        animation: cursorBlink 0.7s infinite;
       }
 
-      @keyframes blink {
+      @keyframes cursorBlink {
         0%,
-        50% {
+        49% {
           opacity: 1;
         }
 
-        51%,
+        50%,
         100% {
           opacity: 0;
         }
@@ -108,7 +120,13 @@
           border-width: 10px;
         }
 
-        .role-animation {
+        #role-animation {
+          font-size: 21px;
+          white-space: normal;
+          min-height: 40px;
+        }
+
+        #typing-animation {
           font-size: 22px;
         }
       }
@@ -126,7 +144,9 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">Anuj Sable</a>
+        <a class="navbar-brand" href="index.html">
+          Anuj Sable
+        </a>
 
         <button
           class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
@@ -188,6 +208,7 @@
             >
               <div class="col-md-7 ftco-animate text-center text-md-left">
                 <div class="text">
+
                   <span class="subheading">
                     Welcome to my Portfolio
                   </span>
@@ -196,21 +217,23 @@
                     I'm <span>Anuj Sable</span>
                   </h1>
 
+                  <!-- TOP ANIMATION -->
                   <span id="typing-animation"></span>
 
                   <br /><br />
 
-                  <!-- ANIMATED JOB ROLES -->
+                  <!-- MAIN JOB ROLE ANIMATION -->
                   <h2 id="role-animation">
-  <span id="role-text">DATA SCIENCE INTERN</span>
-  <span id="role-cursor">|</span>
-</h2>
+                    <span id="role-text">DATA SCIENCE INTERN</span>
+                    <span id="role-cursor">|</span>
+                  </h2>
 
                   <p>
                     <a
                       href="https://www.linkedin.com/in/anujsable/"
                       class="btn btn-primary py-3 px-4"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       LinkedIn Profile
                     </a>
@@ -219,10 +242,12 @@
                       href="https://github.com/AnujSable"
                       class="btn btn-white btn-outline-white py-3 px-4"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       GitHub Repos
                     </a>
                   </p>
+
                 </div>
               </div>
 
@@ -247,14 +272,24 @@
     >
       <div class="container">
         <div class="row">
+
           <div class="col-md-6 col-lg-5 d-flex">
             <div class="img-about img d-flex align-items-stretch">
               <div class="overlay">
-                <div class="skill-mf">
-                  <p class="title-s">Core Competencies</p>
 
-                  <span>Python (Pandas, Scikit-Learn)</span>
-                  <span class="pull-right">90%</span>
+                <div class="skill-mf">
+
+                  <p class="title-s">
+                    Core Competencies
+                  </p>
+
+                  <span>
+                    Python (Pandas, Scikit-Learn)
+                  </span>
+
+                  <span class="pull-right">
+                    90%
+                  </span>
 
                   <div class="progress">
                     <div
@@ -263,8 +298,13 @@
                     ></div>
                   </div>
 
-                  <span>Machine Learning & NLP</span>
-                  <span class="pull-right">85%</span>
+                  <span>
+                    Machine Learning & NLP
+                  </span>
+
+                  <span class="pull-right">
+                    85%
+                  </span>
 
                   <div class="progress">
                     <div
@@ -273,8 +313,13 @@
                     ></div>
                   </div>
 
-                  <span>SQL & NoSQL (MongoDB)</span>
-                  <span class="pull-right">80%</span>
+                  <span>
+                    SQL & NoSQL (MongoDB)
+                  </span>
+
+                  <span class="pull-right">
+                    80%
+                  </span>
 
                   <div class="progress">
                     <div
@@ -283,8 +328,13 @@
                     ></div>
                   </div>
 
-                  <span>Data Visualization (Power BI)</span>
-                  <span class="pull-right">85%</span>
+                  <span>
+                    Data Visualization (Power BI)
+                  </span>
+
+                  <span class="pull-right">
+                    85%
+                  </span>
 
                   <div class="progress">
                     <div
@@ -293,8 +343,13 @@
                     ></div>
                   </div>
 
-                  <span>Java & Data Structures</span>
-                  <span class="pull-right">75%</span>
+                  <span>
+                    Java & Data Structures
+                  </span>
+
+                  <span class="pull-right">
+                    75%
+                  </span>
 
                   <div class="progress">
                     <div
@@ -302,16 +357,23 @@
                       style="width: 75%"
                     ></div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="heading-section ftco-animate">
-              <h1 class="big">Profile</h1>
 
-              <h2 class="mb-4">Professional Overview</h2>
+            <div class="heading-section ftco-animate">
+
+              <h1 class="big">
+                Profile
+              </h1>
+
+              <h2 class="mb-4">
+                Professional Overview
+              </h2>
 
               <p>
                 Current Data Science Intern at Cognifyz Technologies
@@ -323,43 +385,60 @@
               </p>
 
               <ul class="about-info mt-4 px-md-0 px-2">
+
                 <li class="d-flex">
                   <span>Current Role:</span>
-                  <span>Data Science Intern @ Cognifyz</span>
+                  <span>
+                    Data Science Intern @ Cognifyz
+                  </span>
                 </li>
 
                 <li class="d-flex">
                   <span>Education:</span>
-                  <span>B.Tech in Computer Science (Data Science)</span>
+                  <span>
+                    B.Tech in Computer Science (Data Science)
+                  </span>
                 </li>
 
                 <li class="d-flex">
                   <span>Key Skills:</span>
-                  <span>ML Pipelines, NLP, Data Visualization</span>
+                  <span>
+                    ML Pipelines, NLP, Data Visualization
+                  </span>
                 </li>
 
                 <li class="d-flex">
                   <span>Location:</span>
-                  <span>Pune, Maharashtra</span>
+                  <span>
+                    Pune, Maharashtra
+                  </span>
                 </li>
+
               </ul>
             </div>
 
             <!-- TECHNICAL STACK -->
             <div class="row mt-5 ftco-animate">
+
               <div class="col-md-12">
-                <h3 class="mb-4">Technical Stack</h3>
+
+                <h3 class="mb-4">
+                  Technical Stack
+                </h3>
 
                 <div
                   class="d-flex flex-wrap"
                   style="gap: 25px"
                 >
+
                   <div class="text-center">
                     <img
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">Python</p>
+                    <p style="font-size: 11px">
+                      Python
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -367,7 +446,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">Java</p>
+                    <p style="font-size: 11px">
+                      Java
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -375,7 +456,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">MySQL</p>
+                    <p style="font-size: 11px">
+                      MySQL
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -383,7 +466,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">MongoDB</p>
+                    <p style="font-size: 11px">
+                      MongoDB
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -391,7 +476,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">Pandas</p>
+                    <p style="font-size: 11px">
+                      Pandas
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -399,7 +486,9 @@
                       src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">Scikit-Learn</p>
+                    <p style="font-size: 11px">
+                      Scikit-Learn
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -407,7 +496,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">HTML5</p>
+                    <p style="font-size: 11px">
+                      HTML5
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -415,7 +506,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">CSS3</p>
+                    <p style="font-size: 11px">
+                      CSS3
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -423,7 +516,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">JS</p>
+                    <p style="font-size: 11px">
+                      JS
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -431,7 +526,9 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">Git</p>
+                    <p style="font-size: 11px">
+                      Git
+                    </p>
                   </div>
 
                   <div class="text-center">
@@ -439,8 +536,11 @@
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       class="tech-stack-icon"
                     />
-                    <p style="font-size: 11px">GitHub</p>
+                    <p style="font-size: 11px">
+                      GitHub
+                    </p>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -455,70 +555,98 @@
       id="resume-section"
     >
       <div class="container">
+
         <div class="row justify-content-center pb-5">
+
           <div
             class="col-md-10 heading-section text-center ftco-animate"
           >
-            <h2 class="mb-4">Experience & Education</h2>
+
+            <h2 class="mb-4">
+              Experience & Education
+            </h2>
 
             <p>
               <a
-                href="assets/AnujSable_Resume1.pdf"
+                href="assets/AnujSable_Resume.pdf"
                 target="_blank"
                 class="btn btn-primary py-3 px-4"
               >
                 Download Full Resume
               </a>
             </p>
+
           </div>
         </div>
 
         <div class="row">
+
           <!-- EXPERIENCE -->
           <div class="col-md-6">
-            <h3 class="mb-4">Industry Experience</h3>
+
+            <h3 class="mb-4">
+              Industry Experience
+            </h3>
 
             <div class="resume-wrap ftco-animate">
-              <span class="date">Feb 2026 - Present</span>
 
-              <h2>Data Science Intern</h2>
+              <span class="date">
+                Feb 2026 - Present
+              </span>
+
+              <h2>
+                Data Science Intern
+              </h2>
 
               <span class="position">
                 Cognifyz Technologies
               </span>
 
               <p class="mt-4">
-                Analyzing complex datasets, performing geospatial
-                analysis, and building predictive models for
-                restaurant distribution and rating trends.
-                Assisting in data-driven solution development.
+                Analyzing complex datasets, performing geospatial analysis,
+                and building predictive models for restaurant distribution
+                and rating trends. Assisting in data-driven solution
+                development.
               </p>
+
             </div>
 
             <div class="resume-wrap ftco-animate">
-              <span class="date">Oct 2025</span>
 
-              <h2>Data Modeling Internship</h2>
+              <span class="date">
+                Oct 2025
+              </span>
+
+              <h2>
+                Data Modeling Internship
+              </h2>
 
               <span class="position">
                 British Airways (via Forage)
               </span>
 
               <p class="mt-4">
-                Developed strategic demand forecasting models and
-                eligibility criteria for premium lounge tiers.
-                Analyzed flight schedules at Heathrow Terminal 3
-                to justify infrastructure investments.
+                Developed strategic demand forecasting models and eligibility
+                criteria for premium lounge tiers. Analyzed flight schedules
+                at Heathrow Terminal 3 to justify infrastructure investments.
               </p>
+
             </div>
+
           </div>
 
           <!-- EDUCATION -->
           <div class="col-md-6">
-            <h3 class="mb-4">Academic Background</h3>
+
+            <h3 class="mb-4">
+              Academic Background
+            </h3>
 
             <div class="resume-wrap ftco-animate">
-              <span class="date">2023 - 2027</span>
+
+              <span class="date">
+                2023 - 2027
+              </span>
 
               <h2>
                 B.Tech in Computer Science (Data Science)
@@ -529,98 +657,117 @@
               </span>
 
               <p class="mt-4">
-                Focusing on Machine Learning, Database Management
-                Systems (SQL/NoSQL), and Data Structures.
-                Currently maintaining high academic standards
-                in DS core subjects.
+                Focusing on Machine Learning, Database Management Systems
+                (SQL/NoSQL), and Data Structures. Currently maintaining high
+                academic standards in DS core subjects.
               </p>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- PROJECT SECTION -->
-    <section class="ftco-section" id="project-section">
+    <section
+      class="ftco-section"
+      id="project-section"
+    >
       <div class="container">
-        <div
-          class="row justify-content-center mb-5"
-        >
+
+        <div class="row justify-content-center mb-5">
+
           <div
             class="col-md-7 heading-section text-center ftco-animate"
           >
-            <h1 class="big big-2">Work</h1>
 
-            <h2 class="mb-4">Deployment Projects</h2>
+            <h1 class="big big-2">
+              Work
+            </h1>
+
+            <h2 class="mb-4">
+              Deployment Projects
+            </h2>
+
           </div>
         </div>
 
         <div class="row d-flex">
+
           <!-- PROJECT 1 -->
           <div class="col-md-6 d-flex ftco-animate">
+
             <div class="blog-entry justify-content-end">
+
               <a
                 href="https://github.com/AnujSable/House-Price-Prediction"
                 class="block-20"
                 target="_blank"
-                style="
-                  background-image: url('images/proj_1.jpg');
-                "
+                rel="noopener noreferrer"
+                style="background-image: url(&quot;images/proj_1.jpg&quot;)"
               ></a>
 
-              <div
-                class="text mt-3 float-right d-block"
-              >
+              <div class="text mt-3 float-right d-block">
+
                 <h3 class="heading">
+
                   <a
                     href="https://github.com/AnujSable/House-Price-Prediction"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     House Price Prediction App
                   </a>
+
                 </h3>
 
                 <p>
-                  An end-to-end ML application achieving 96%
-                  accuracy using Random Forest Regressors,
-                  deployed via Streamlit.
+                  An end-to-end ML application achieving 96% accuracy using
+                  Random Forest Regressors, deployed via Streamlit.
                 </p>
+
               </div>
             </div>
           </div>
 
           <!-- PROJECT 2 -->
           <div class="col-md-6 d-flex ftco-animate">
+
             <div class="blog-entry justify-content-end">
+
               <a
                 href="https://github.com/AnujSable/SMS-Spam-Detection"
                 class="block-20"
                 target="_blank"
-                style="
-                  background-image: url('images/proj_2.jpg');
-                "
+                rel="noopener noreferrer"
+                style="background-image: url(&quot;images/proj_2.jpg&quot;)"
               ></a>
 
-              <div
-                class="text mt-3 float-right d-block"
-              >
+              <div class="text mt-3 float-right d-block">
+
                 <h3 class="heading">
+
                   <a
                     href="https://github.com/AnujSable/SMS-Spam-Detection"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     NLP Spam Detection System
                   </a>
+
                 </h3>
 
                 <p>
-                  98% accuracy in real-time classification using
-                  TF-IDF and Logistic Regression, fully deployed
-                  on the web.
+                  98% accuracy in real-time classification using TF-IDF and
+                  Logistic Regression, fully deployed on the web.
                 </p>
+
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -631,24 +778,32 @@
       id="certifications-section"
     >
       <div class="container">
-        <div
-          class="row justify-content-center mb-5"
-        >
+
+        <div class="row justify-content-center mb-5">
+
           <div
             class="col-md-7 heading-section text-center ftco-animate"
           >
-            <h2 class="mb-4">Certifications</h2>
+
+            <h2 class="mb-4">
+              Certifications
+            </h2>
+
           </div>
         </div>
 
         <div class="row">
+
           <div class="col-md-4 ftco-animate">
+
             <div class="services-1 text-center">
+
               <span class="icon">
                 <i class="flaticon-analysis"></i>
               </span>
 
               <div class="desc">
+
                 <h3 class="mb-4">
                   Introduction to SQL
                 </h3>
@@ -656,17 +811,21 @@
                 <p>
                   <strong>Simplilearn</strong>
                 </p>
+
               </div>
             </div>
           </div>
 
           <div class="col-md-4 ftco-animate">
+
             <div class="services-1 text-center">
+
               <span class="icon">
                 <i class="flaticon-analysis"></i>
               </span>
 
               <div class="desc">
+
                 <h3 class="mb-4">
                   Machine Learning Using Python
                 </h3>
@@ -676,26 +835,33 @@
                 </p>
 
                 <p>
+
                   <a
                     href="https://certificates.simplicdn.net/share/9925856_9989031_1772767389410.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary py-2 px-3"
                     style="font-size: 10px"
                   >
                     View Certificate
                   </a>
+
                 </p>
+
               </div>
             </div>
           </div>
 
           <div class="col-md-4 ftco-animate">
+
             <div class="services-1 text-center">
+
               <span class="icon">
                 <i class="flaticon-flasks"></i>
               </span>
 
               <div class="desc">
+
                 <h3 class="mb-4">
                   Data Science Foundations
                 </h3>
@@ -703,17 +869,21 @@
                 <p>
                   <strong>IBM</strong>
                 </p>
+
               </div>
             </div>
           </div>
 
           <div class="col-md-4 ftco-animate mt-4">
+
             <div class="services-1 text-center">
+
               <span class="icon">
                 <i class="flaticon-ideas"></i>
               </span>
 
               <div class="desc">
+
                 <h3 class="mb-4">
                   Python for Data Science
                 </h3>
@@ -721,9 +891,11 @@
                 <p>
                   <strong>IBM</strong>
                 </p>
+
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -734,105 +906,144 @@
       id="contact-section"
     >
       <div class="container">
+
         <div
           class="row justify-content-center mb-5 pb-3"
         >
+
           <div
             class="col-md-7 heading-section text-center ftco-animate"
           >
-            <h2 class="mb-4">Get in Touch</h2>
+
+            <h2 class="mb-4">
+              Get in Touch
+            </h2>
+
           </div>
         </div>
 
         <div class="row d-flex contact-info mb-5">
+
           <!-- PHONE -->
           <div class="col-md-4 d-flex ftco-animate">
+
             <div
               class="align-self-stretch box p-4 text-center"
             >
+
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-phone2"></span>
               </div>
 
-              <h3 class="mb-4">Phone</h3>
+              <h3 class="mb-4">
+                Phone
+              </h3>
 
               <p>
                 <a href="tel://7517808933">
                   +91 7517808933
                 </a>
               </p>
+
             </div>
           </div>
 
           <!-- EMAIL -->
           <div class="col-md-4 d-flex ftco-animate">
+
             <div
               class="align-self-stretch box p-4 text-center"
             >
+
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-paper-plane"></span>
               </div>
 
-              <h3 class="mb-4">Email</h3>
+              <h3 class="mb-4">
+                Email
+              </h3>
 
               <p>
                 <a href="mailto:anujsable751@gmail.com">
                   anujsable751@gmail.com
                 </a>
               </p>
+
             </div>
           </div>
 
           <!-- LOCATION -->
           <div class="col-md-4 d-flex ftco-animate">
+
             <div
               class="align-self-stretch box p-4 text-center"
             >
+
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
                 <span class="icon-globe"></span>
               </div>
 
-              <h3 class="mb-4">Location</h3>
+              <h3 class="mb-4">
+                Location
+              </h3>
 
               <p>
                 Pune, Maharashtra, India
               </p>
+
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="ftco-footer ftco-section">
+
       <div class="container">
+
         <div class="row">
+
           <div class="col-md-12 text-center">
+
             <p>
+
               Copyright &copy;
+
               <script>
-                document.write(new Date().getFullYear());
+                document.write(
+                  new Date().getFullYear()
+                );
               </script>
+
               Anuj Sable | All Rights Reserved
+
             </p>
+
           </div>
         </div>
       </div>
     </footer>
 
     <!-- LOADER -->
-    <div id="ftco-loader" class="show fullscreen">
+    <div
+      id="ftco-loader"
+      class="show fullscreen"
+    >
+
       <svg
         class="circular"
         width="48px"
         height="48px"
       >
+
         <circle
           class="path-bg"
           cx="24"
@@ -853,13 +1064,15 @@
           stroke-miterlimit="10"
           stroke="#F96D00"
         />
+
       </svg>
+
     </div>
 
     <!-- JAVASCRIPT LIBRARIES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
@@ -875,54 +1088,110 @@
       document.addEventListener(
         "DOMContentLoaded",
         function () {
-          const typingAnimationElement =
+
+          const typingElement =
             document.getElementById(
               "typing-animation"
             );
 
           const typingTexts = [
-            "Data Scientist  ",
-            "Data Analyst ",
-            "Machine Learning Engineer ",
-            "Python Developer ",
-            "SQL Developer "
+            "Data Scientist",
+            "Data Analyst",
+            "Machine Learning Engineer",
+            "Python Developer",
+            "SQL Developer"
           ];
 
-          function playTypingAnimation(text) {
-            if (!typingAnimationElement) return;
+          let textIndex = 0;
+          let characterIndex = 0;
+          let deleting = false;
 
-            for (let i = 0; i < text.length; i++) {
-              setTimeout(() => {
-                typingAnimationElement.textContent +=
-                  text[i];
-              }, i * 150);
+          function typeTopText() {
+
+            if (!typingElement) {
+              return;
             }
 
-            setTimeout(() => {
-              typingAnimationElement.textContent = "";
+            const currentText =
+              typingTexts[textIndex];
 
-              playTypingAnimation(
-                typingTexts[
-                  (typingTexts.indexOf(text) + 1) %
-                    typingTexts.length
-                ]
+            if (!deleting) {
+
+              typingElement.textContent =
+                currentText.substring(
+                  0,
+                  characterIndex + 1
+                );
+
+              characterIndex++;
+
+              if (
+                characterIndex ===
+                currentText.length
+              ) {
+
+                deleting = true;
+
+                setTimeout(
+                  typeTopText,
+                  1800
+                );
+
+                return;
+              }
+
+              setTimeout(
+                typeTopText,
+                100
               );
-            }, text.length * 150 + 2000);
+
+            } else {
+
+              typingElement.textContent =
+                currentText.substring(
+                  0,
+                  characterIndex - 1
+                );
+
+              characterIndex--;
+
+              if (characterIndex === 0) {
+
+                deleting = false;
+
+                textIndex =
+                  (textIndex + 1) %
+                  typingTexts.length;
+
+                setTimeout(
+                  typeTopText,
+                  400
+                );
+
+                return;
+              }
+
+              setTimeout(
+                typeTopText,
+                50
+              );
+            }
           }
 
-          playTypingAnimation(typingTexts[0]);
+          typeTopText();
         }
       );
     </script>
 
-    <!-- JOB ROLE TYPING ANIMATION -->
+    <!-- MAIN JOB ROLE ANIMATION -->
     <script>
       document.addEventListener(
         "DOMContentLoaded",
         function () {
-          const roleElement =
+
+          const roleText =
             document.getElementById(
-              "role-typing"
+              "role-text"
             );
 
           const roles = [
@@ -936,28 +1205,33 @@
           ];
 
           let roleIndex = 0;
-          let charIndex = 0;
+          let characterIndex = 0;
           let deleting = false;
 
           function typeRole() {
-            if (!roleElement) return;
+
+            if (!roleText) {
+              return;
+            }
 
             const currentRole =
               roles[roleIndex];
 
             if (!deleting) {
-              roleElement.textContent =
+
+              roleText.textContent =
                 currentRole.substring(
                   0,
-                  charIndex + 1
+                  characterIndex + 1
                 );
 
-              charIndex++;
+              characterIndex++;
 
               if (
-                charIndex ===
+                characterIndex ===
                 currentRole.length
               ) {
+
                 deleting = true;
 
                 setTimeout(
@@ -970,18 +1244,21 @@
 
               setTimeout(
                 typeRole,
-                100
+                90
               );
+
             } else {
-              roleElement.textContent =
+
+              roleText.textContent =
                 currentRole.substring(
                   0,
-                  charIndex - 1
+                  characterIndex - 1
                 );
 
-              charIndex--;
+              characterIndex--;
 
-              if (charIndex === 0) {
+              if (characterIndex === 0) {
+
                 deleting = false;
 
                 roleIndex =
@@ -990,7 +1267,7 @@
 
                 setTimeout(
                   typeRole,
-                  400
+                  500
                 );
 
                 return;
@@ -998,16 +1275,35 @@
 
               setTimeout(
                 typeRole,
-                50
+                45
               );
             }
           }
 
-          typeRole();
+          /*
+           * Start with visible text immediately.
+           * This prevents the role from ever
+           * appearing completely blank.
+           */
+          roleText.textContent =
+            roles[0];
+
+          characterIndex =
+            roles[0].length;
+
+          deleting = true;
+
+          setTimeout(
+            typeRole,
+            1800
+          );
+
         }
       );
     </script>
 
+    <!-- MAIN JS -->
     <script src="js/main.js"></script>
+
   </body>
 </html>
